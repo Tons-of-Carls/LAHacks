@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+      
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyA5VQQQibexwSgL8SU-cOXL8ewN50qmW8c",
+            authDomain: "lahacks-445f1.firebaseapp.com",
+            databaseURL: "https://lahacks-445f1.firebaseio.com",
+            projectId: "lahacks-445f1",
+            storageBucket: "lahacks-445f1.appspot.com",
+            messagingSenderId: "1001600155957"
+          };
+          firebase.initializeApp(config);
+        </script>
+      
     <style>
 
       .logo{
@@ -63,15 +77,18 @@
         </nav>
         <div>
 
-          <div style="margin:100px;" class="container jumbotron">
-            <p align="middle">First Name: <input type="text" name="fname" size="40"></p>
-            <p align="middle">Last Name: <input type="text" name="lname" size="40"></p>
-            <p align="middle">Email: <input type="email" name="email" size="40"></p>
-            <p align="middle">Password: <input type="password" name="password" size="40"></p>
-            <p align="middle">Confirm Password: <input type="password" name="confirmpw" size="40"></p>
-            <p align="middle"><input type="checkbox" name="showpw">show password </p>  
-            <div>
+        <div style="margin:100px;" class="container jumbotron">
+            <p align="middle">First Name: <input id="FN" type="text" name="fname" size="40"></p>
+            <p align="middle">Last Name: <input id="LN" type="text" name="lname" size="40"></p>
+            <p align="middle">Email: <input id="email" type="email" name="email" size="40"></p>
+            <p align="middle">Password: <input id="pass" type="password" name="password" size="40"></p>
+            <p align="middle">Confirm Password: <input id="confpass" type="password" name="confirmpw" size="40"></p> 
+            <button onclick="auth_Email_create()" type="button">Sign Up</button>
+        <div>
 
               </body>
             </head>
+            
+            <script src = "scripts/main.js"></script>
+            
           </html>
