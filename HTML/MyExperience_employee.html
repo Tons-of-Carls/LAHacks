@@ -11,126 +11,137 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
+      
+      body {
+        background-image: url('https://images.unsplash.com/photo-1495503545052-fae66821ac93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3d83a1727cae7ab871e93c4968cb7ef3&auto=format&fit=crop&w=1374&q=80');
+        color: black;
+        
+        .navbar{
+          color:black;
+        }
+        a: {
+        color: black;  
+        }
+      }
       .center
       {
         text-align: center;
       }
     </style>
-
+  </head>
     <body>
       <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"><b>careers4dummies</b></a>
+            <a class="navbar-brand" href="index.html" style="color:#ff6e00"><b>careers4dummies</b></a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Q&A</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">My Experience</a></li>
-            <li><a href="#">Job Shadows / Internships</a></li>
-            <li><a href="#">Direct Message</a></li>
+            <li class="active"><a style="color:black" href="#">Q&A</a></li>
+            <li><a style="color:black" href="employee.html">Profile</a></li>
+            <li><a  style="color:black"  href="myexperience_employee.html">My Experience</a></li>
+            <li><a style="color:black" href="jobemployee.html">Job Shadows / Internships</a></li>
+            <li><a style="color:black" href="#">Direct Message</a></li>
           </ul>
         </div>
       </nav>
-     <br><br>
+      <br><br>
 
       <!--Title-->
       <div class="container">
         <h3 class="text-primary text-center">
-          <p align="middle">My Experience</p></h3> 
+          <p align="middle" style="color:black">My Experience</p></h3> 
         <p align="middle"><font size="4">
           Describe for students what a normal day at your career entails and the skillset required to be successful in your field: 
           </font></p>
-      <!--Display Biography-->
-      <div style="color:black;text-align:left" class="container jumbotron">
-        <!--Job brief job description-->
-        <div class="row">
-          <div class="col-xs-1">
+        <!--Display Biography-->
+        <div style="color:black;text-align:left" class="container jumbotron">
+          <!--Job brief job description-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Brief Job Description:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
           </div>
-          <div class="col-xs-3">
-            <label class="header">Brief Job Description:</label>
+          <br>
+          <!--Skills Required-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Skills Required:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
+          </div>  
+          <br>
+          <!--Daily Tasks-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Daily Tasks:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
           </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+          <br>
+          <!--Job Satisfaction-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Job Satisfaction:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
           </div>
-        </div>
-        <br>
-        <!--Skills Required-->
-        <div class="row">
-          <div class="col-xs-1">
+          <br>
+          <!--Interests-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Interests:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
           </div>
-          <div class="col-xs-3">
-            <label class="header">Skills Required:</label>
+          <br>
+          <!--Tips/Advice-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Tips/Advice:</label>
+            </div>
+            <div class="col-xs-2">
+              <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+            </div>
           </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
+          <br>
+          <!--Salary-->
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+              <label class="header">Salary (Optional):</label>
+            </div>
+            <div class="col-xs-2">
+              <input type="text" name="jobtitle" size="40">
+            </div>
           </div>
-        </div>  
-        <br>
-        <!--Daily Tasks-->
-        <div class="row">
-          <div class="col-xs-1">
-          </div>
-          <div class="col-xs-3">
-            <label class="header">Daily Tasks:</label>
-          </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
-          </div>
-        </div>
-        <br>
-        <!--Job Satisfaction-->
-        <div class="row">
-          <div class="col-xs-1">
-          </div>
-          <div class="col-xs-3">
-            <label class="header">Job Satisfaction:</label>
-          </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
-          </div>
-        </div>
-        <br>
-        <!--Interests-->
-        <div class="row">
-          <div class="col-xs-1">
-          </div>
-          <div class="col-xs-3">
-            <label class="header">Interests:</label>
-          </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
-          </div>
-        </div>
-        <br>
-        <!--Tips/Advice-->
-        <div class="row">
-          <div class="col-xs-1">
-          </div>
-          <div class="col-xs-3">
-            <label class="header">Tips/Advice:</label>
-          </div>
-          <div class="col-xs-2">
-            <textarea name="textarea" style="width:310px;height:150px;"></textarea>
-          </div>
-        </div>
-        <br>
-        <!--Salary-->
-        <div class="row">
-          <div class="col-xs-1">
-          </div>
-          <div class="col-xs-3">
-            <label class="header">Salary (Optional):</label>
-          </div>
-          <div class="col-xs-2">
-            <input type="text" name="jobtitle" size="40">
-          </div>
-        </div>
           <div><p align="middle"><input  type="submit" value="Submit "></p></div>
-      </div>
+        </div>
       </div>
       <a href=""><p align="middle">View Comments</p> </a>
-      
+
     </body>
-  </head>
 </html>
